@@ -201,14 +201,12 @@
     <h2 class="title is-3">Method Overview</h2>
     <div class="is-centered has-text-centered"><img src="static/FloED/Fig_0.jpg" alt="" width="100%"></div>
     <p style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
-      Our method employs a dual-branch architecture implemented through a two-stage training approach:
-      <ol style="padding-left: 1.5rem;">
-      <li>Overview of FloED. FloED employs a dual-branch architecture implemented through a two-stage training approach. In the first training stage, we focus exclusively on the upper branch, optimizing the motion layer to adapt specifically to the video inpainting domain. Subsequently, we introduce a time-agnostic flow branch complemented by a multi-scale flow adapter, which provides flow guidance covering upblocks of primary UNet. During the inference phase, we enhance efficiency by integrating the flow attention cache (right part)</li>
-      <li>We introduce a  <span class="text-bold">training-free latent interpolation </span>technique that leverages optical flow to speed up the multi-step denoising process. Complemented by a flow attention cache mechanism, FloED efficiently reduces the additional computational costs introduced by the flow. 
-      </ol>
+Overview of FloED. FloED employs a dual-branch architecture implemented through a two-stage training approach. In the first training stage, we focus exclusively on the upper branch, optimizing the motion layer to adapt specifically to the video inpainting domain. Subsequently, we introduce a time-agnostic flow branch complemented by a multi-scale flow adapter, which provides flow guidance covering upblocks of primary UNet. During the inference phase, we enhance efficiency by integrating the flow attention cache (right part)</li>
+      
     </p>
         <p style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
     <div class="is-centered has-text-centered"><img src="static/FloED/Fig_1.jpg" alt="" width="80%"> </div>
+    We introduce a  <span class="text-bold">training-free latent interpolation </span>technique that leverages optical flow to speed up the multi-step denoising process. Complemented by a flow attention cache mechanism, FloED efficiently reduces the additional computational costs introduced by the flow. 
 
   </div>
 </section>
@@ -325,7 +323,7 @@
                     type="video/mp4">
           </video>
               <p style="text-align: center; font-size: 24px;  margin-bottom: 20px; font-family: 'Times', 'Times New Roman', serif;font-style: italic;">
-            "A living room with the white tall bookshelf."
+            "A fan of cash floating in front of a white bookshelf with plants and book in the background."
           </p>
                     <video autoplay controls muted loop playsinline height="100%">
             <source src="static/FloED/Output/man.mp4"
@@ -339,7 +337,7 @@
                     type="video/mp4">
           </video>
               <p style="text-align: center; font-size: 24px;  margin-bottom: 20px; font-family: 'Times', 'Times New Roman', serif;font-style: italic;">
-            “Billowing dust and sandy terrain.”
+            “A dusty desert with tire tracks etched into the sandy dunes.”
           </p>
                               <video autoplay controls muted loop playsinline height="100%">
             <source src="static/FloED/Output/blackswan.mp4"
