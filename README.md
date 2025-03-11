@@ -1,2 +1,2 @@
 # FloED
-Advanced Video Inpainting Using Optical Flow-Guided Efficient Diffusion
+Coherent Video Inpainting Using Optical Flow-Guided Efficient Diffusion
